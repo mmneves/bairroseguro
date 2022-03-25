@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/brasao_prefeitura_birigui" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:text="Secretaria de Segurança Municipal"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Polícia Municipal de Birigui"
+        android:textSize="22dp"
+        android:textColor="@android:color/white"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/logo2" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edit_login_email"
+        android:layout_marginTop="6dp"
+        android:hint="Digite seu e-mail" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edit_login_senha"
+        android:hint="Digite sua senha"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_logar"
+        android:id="@+id/bt_logar"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/edittextstyle"/>
+
+    <TextView
+        android:id="@+id/txt_ou"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="______________  ou  ______________"
+        android:textSize="16sp"
+        android:layout_below="@+id/bt_logar"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/edittextstyle2"
+        android:onClick="abrirCadastroUsuario"
+        android:text="CADASTRE-SE" />
+
+
+</LinearLayout>

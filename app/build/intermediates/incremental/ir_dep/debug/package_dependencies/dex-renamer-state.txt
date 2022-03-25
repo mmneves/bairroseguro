@@ -1,0 +1,7 @@
+#Wed May 22 13:42:27 BRT 2019
+base.0=H\:\\Desenvolvimento\\Projetos Android\\BairroSeguro\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=H\:\\Desenvolvimento\\Projetos Android\\BairroSeguro\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21

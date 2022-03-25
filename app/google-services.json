@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "325883009034",
+    "firebase_url": "https://bairroseguro-eccd2.firebaseio.com",
+    "project_id": "bairroseguro-eccd2",
+    "storage_bucket": "bairroseguro-eccd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325883009034:android:b7ad3a0c67ad196e",
+        "android_client_info": {
+          "package_name": "com.nevesti.www.bairroseguro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325883009034-47veovob1b48ut76otn0rm7r54itq92d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nevesti.www.bairroseguro",
+            "certificate_hash": "81e0e3f22804b09013ef56de6151d4dd39412015"
+          }
+        },
+        {
+          "client_id": "325883009034-kn01trfhl30g9mdl4t8dljbs4lusap2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM7qGzdtN9Z0YP-KetAohQ0DZX8Z_3wvE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325883009034-kn01trfhl30g9mdl4t8dljbs4lusap2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

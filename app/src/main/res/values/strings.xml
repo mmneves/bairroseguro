@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIADE - Mobile</string>
+    <string name="app_version">Versão 1.0</string>
+    <string name="copyright">Polícia Municipal de Birigui-SP \nCopyright © 2019 \n\nTodos
+        direitos reservados</string>
+
+    <!--AdMob-->
+    <string name="admob_app_id">ca-app-pub-6810975285235874~3856198426</string>
+    <string name="admob_banner_unit_id">ca-app-pub-6810975285235874/4782267281</string>
+    <string name="admob_interstitial_unit_id">ca-app-pub-6810975285235874/8471474124</string>
+
+    <!-- youtube -->
+    <string name="youtube_api_key">AIzaSyDcmfCPdCSVsXmqJN8rrm3bUo4pZrcp4ek</string>
+    <string name="error_player">Houve um erro ao inicializar o YouTube Player (%1$s)</string>
+
+    <!--share-->
+    <string name="share_content">Eu gostaria de compartilhar isso com você. Aqui você pode baixar este aplicativo da PlayStore</string>
+
+    <!-- play store application link i.e more apps -->
+    <string name="play_more_apps">https://play.google.com/store/apps/developer?id=Solodroid</string>
+
+    <!--favorite-->
+    <string name="whops">Desculpe!</string>
+    <string name="cannot_add_to_favorite">Não foi possível adicionar aos favoritos</string>
+    <string name="favorite_added">Adicionado aos Favoritos</string>
+    <string name="favorite_removed">Removido dos Favoritos</string>
+    <string name="no_favorite_found">Sua lista de favoritos está vazia porque você não adiciona notícias no menu de favoritos.</string>
+
+    <!--bottom navigation title-->
+    <string name="title_nav_home">Início</string>
+    <string name="title_nav_category">Categorias</string>
+    <string name="title_nav_video">Videos</string>
+    <string name="title_nav_favorite">Favoritos</string>
+    <string name="title_nav_profile">Perfil</string>
+
+    <!--comments-->
+    <string name="title_comments">Comentários</string>
+    <string name="title_update_comment">Comentários</string>
+    <string name="title_send_comment">Enviar comentários</string>
+    <string name="txt_no_comment">Escreva seu primeiro comentário&#8230;</string>
+    <string name="msg_no_comment">Ainda não há comentários, escreva o seu primeiro comentário.</string>
+    <string name="comment_hint">Escreva seu comentário&#8230;</string>
+    <string name="confirm_send_comment">Enviar este comentário?</string>
+    <string name="confirm_update_comment">Atualizar este comentário?</string>
+    <string name="confirm_delete_comment">Tem certeza de que deseja excluir seu comentário?</string>
+    <string name="sending_comment">Enviando comentário&#8230;</string>
+    <string name="updating_comment">Atualizando comentário&#8230;</string>
+    <string name="txt_read">Ler</string>
+    <string name="txt_comment">Comente</string>
+    <string name="txt_comments">Comentário</string>
+    <string name="txt_you">você</string>
+
+    <!--permission-->
+    <string name="permission_msg">Precisa de permissões</string>
+    <string name="permission_upload">Este aplicativo precisa de acesso de armazenamento para enviar sua foto de perfil</string>
+    <string name="download_msg">Baixando&#8230;</string>
+    <string name="download_success">A imagem foi baixada e salva na galeria.</string>
+
+    <!--login-->
+    <string name="login_title">Bom trabalho!</string>
+    <string name="login_process">Entrando na sua conta&#8230;</string>
+    <string name="login_success">Login com sucesso&#8230;</string>
+    <string name="login_failed">E-mail ou senha inválidos!</string>
+    <string name="login_disabled">Conta desativada, entre em contato com o administrador para ativar sua conta</string>
+    <string name="login_required">Por favor efetue o login para escrever um comentário.</string>
+    <string name="do_not_have_account">Não possui uma conta?</string>
+    <string name="register_now">Cadastrar agora</string>
+
+    <!--register-->
+    <string name="register_title">Obrigado por se registrar</string>
+    <string name="register_success">Registro realizado com sucesso&#8230;</string>
+    <string name="register_process">Registrando sua conta&#8230;</string>
+    <string name="register_exist">Endereço de email já usado!</string>
+    <string name="terms_text">Ao criar uma conta, você concorda com nossos</string>
+    <string name="terms_n_privacy">Termos de uso</string>
+    <string name="title_please_wait">Por favor, aguarde&#8230;</string>
+    <string name="already_have_account">Já possui uma conta?</string>
+
+    <!-- toolbar and title-->
+    <string name="title_menu_profile">Perfil</string>
+    <string name="title_menu_close">Fechar</string>
+    <string name="title_menu_save">Salvar</string>
+    <string name="title_menu_send">Enviar</string>
+    <string name="title_menu_later">Favoritos</string>
+    <string name="title_menu_share">Comparilhar</string>
+    <string name="title_menu_search">Procurar&#8230;</string>
+    <string name="title_menu_browser">Abrir no navegador</string>
+    <string name="title_login">ENTRAR</string>
+    <string name="title_register">CADASTRAR</string>
+    <string name="title_forgot_password">ESQUECEU A SENHA</string>
+
+    <!--network message-->
+    <string name="offline">Você não está conectado</string>
+    <string name="msg_offline">Da próxima vez que você estiver on-line, tente salvar algumas novidades para o favorito que você pode ler sem uma conexão com a Internet.</string>
+    <string name="msg_no_news">Desculpe, parece que não há noticias disponiveis para esta categoria neste momento.</string>
+    <string name="msg_no_category">Desculpe, nenhuma Categoria encontrada!</string>
+    <string name="msg_no_news_found">Desculpe, nenhuma notícia encontrada! Se você quiser continuar a pesquisa, tente inserir outra palavra-chave!</string>
+    <string name="msg_no_network">Desculpe, existe algum problema com a sua rede ou o servidor está inoperante, por favor tente novamente mais tarde.</string>
+    <string name="msg_search_input">Por favor, preencha a entrada de pesquisa</string>
+    <string name="btn_retry">TENTE NOVAMENTE</string>
+
+    <!--dialog choose option-->
+    <string name="dialog_success">Sucesso!</string>
+    <string name="dialog_yes">Sim</string>
+    <string name="dialog_no">Não</string>
+    <string name="dialog_ok">Confirma</string>
+    <string name="dialog_cancel">Cancela</string>
+    <string name="dialog_read_more">Leia mais</string>
+    <string name="dialog_dismiss">Dispensar</string>
+    <string name="dialog_settings">CONFIGURAÇÕES</string>
+
+    <!--forgot password-->
+    <string name="forgot_message">Digite o email que usou durante o registro.</string>
+    <string name="forgot_failed_message">E-mail não encontrado em nosso banco de dados!</string>
+    <string name="forgot_success_message">A senha foi enviada para o seu e-mail!</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+
+    <!--form-->
+    <string name="edt_name">Nome</string>
+    <string name="edt_email">E-mail</string>
+    <string name="edt_password">Senha</string>
+
+    <!--button-->
+    <string name="btn_login">ENTRAR</string>
+    <string name="btn_register">CADASTRAR</string>
+    <string name="btn_send">ENVIAR</string>
+
+    <!--close message-->
+    <string name="press_again_to_exit">Clique novamente para sair do aplicativo</string>
+
+    <!--privacy policy url-->
+    <string name="privacy_policy_url">https://policiamunicipalbirigui.wordpress.com/politica-de-privacidade/</string>
+
+    <!--about information-->
+    <string name="title_about_privacy">Política de Privacidade</string>
+    <string name="title_about_rate">Nota</string>
+    <string name="title_about_more">Mais</string>
+    <string name="title_about_info">Sobre</string>
+    <string name="sub_title_about_privacy">Termos e Políticas do Aplicativo</string>
+    <string name="sub_title_about_rate">Dê sua nota e feedback</string>
+    <string name="sub_title_about_more">Mais aplicativos do desenvolvedor</string>
+
+    <string name="item_configuracoes">Configurações</string>
+    <string name="item_sair">Sair</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="title_activity_validador">ValidadorActivity</string>
+    <string name="texto_validacao">Validação</string>
+    <string name="botao_validar">Validar</string>
+    <string name="botao_logar">Entrar</string>
+    <string name="texto_cadastre">Não tem conta? Cadastre-se</string>
+    <string name="title_activity_cadastro_usuario">CadastroUsuarioActivity</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+
+    <!--logout-->
+    <string name="logout_title">Sair</string>
+    <string name="logout_message">Tem certeza de que deseja sair?</string>
+    <string name="logout_process">Saindo de sua conta&#8230;</string>
+    <string name="logout_success">Saiu com sucesso</string>
+
+    <!--profile-->
+    <string name="txt_profile_edit">EDIT</string>
+    <string name="txt_profile_welcome">Bem vindo!</string>
+    <string name="txt_profile_not_registered">Não é cadastrado?</string>
+    <string name="txt_profile_register_now">Cadastre Agora</string>
+    <string name="txt_profile_login">ENTRAR</string>
+    <string name="txt_profile_logout">SAIR</string>
+    <string name="updating_profile">Atualizando Perfil</string>
+    <string name="waiting_message">Por favor aguarde&#8230;</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Policia Municipal - ESD</string>
+    <string name="nav_header_subtitle">pbirigui.guardamunicipal@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+
+</resources>

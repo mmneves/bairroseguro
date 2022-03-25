@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".activity.EnviaDenunciaActivity">
+
+    <include
+        android:id="@+id/tb_conversa"
+        layout="@layout/toolbar" ></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_addfoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_menu_camera"
+            android:gravity="fill|start"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:text="Adicionar uma foto"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_addendereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_action_map"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="Pesquisar local"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txt_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:padding="1dp"
+            android:text="Informe o Local:"
+            android:textColor="@android:color/background_light" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/edit_localizacao"
+            android:layout_marginTop="6dp"
+            android:hint="Local da denúncia..."
+            android:textColor="@color/textColorPrimary" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="16dp"
+        android:text="Relato da Denúncia:"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edit_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/textstyle"
+        android:hint="Descreva a denúncia..."
+        android:inputType="textShortMessage|textMultiLine"
+        android:maxLines="3"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black" />
+
+
+
+    <Button
+        android:id="@+id/bt_enviar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/edittextstyle"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:text="ENVIAR DENÚNCIA"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+
+

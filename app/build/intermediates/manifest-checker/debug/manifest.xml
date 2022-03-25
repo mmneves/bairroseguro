@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nevesti.www.bairroseguro"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="27" />
+
+    <!-- Para preencher automaticamente o campo de texto de email no formulário de login com os emails do usuário -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <compatible-screens>
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+    </compatible-screens>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.nevesti.www.bairroseguro.activity.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher_previseg"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivitySplash"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.NavigationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.DashboardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ConversaActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.MainActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.TelefonesActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.LocalizacaoActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.EmergenciaActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.DenunciasActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.EnviaDenunciaActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DenunciasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DenunciasActivity" />
+        </activity>
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.PesquisaLocalActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.EnviaDenunciaActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nevesti.www.bairroseguro.activity.DenunciasActivity" />
+        </activity>
+        <activity android:name="com.nevesti.www.bairroseguro.activity.CadastroUsuarioActivity" />
+
+        <!-- Adicionado para noticias -->
+
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.NoticiasActivity"
+            android:parentActivityName="com.nevesti.www.bairroseguro.activity.DashboardActivity" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityUserLogin"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityUserRegister"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityProfile"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityForgotPassword"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityFullScreenImage"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityComments"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivitySendComment"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityUpdateComment"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityReplyComment"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityNewsDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityCategoryDetails"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityPrivacyPolicy"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityYoutubePlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityVideoPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityWebView"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityWebViewImage"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivityNotificationDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nevesti.www.bairroseguro.activity.ActivitySearch"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateVisible" />
+
+        <service android:name="com.nevesti.www.bairroseguro.fcm.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.nevesti.www.bairroseguro.fcm.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.nevesti.www.bairroseguro.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.nevesti.www.bairroseguro.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
